@@ -1,0 +1,50 @@
+{
+  "skill": "dingtalk-api",
+  "permissions": {
+    "readOnly": true,
+    "allowedOperations": [
+      "getUserInfo",
+      "getOrgStructure", 
+      "getUserListByDepartment",
+      "getApprovalTemplates",
+      "getApprovals",
+      "getFiles",
+      "getKnowledgeArticles",
+      "sendMessage",
+      "sendTextMessageToUsers",
+      "getAnnouncements"
+    ],
+    "forbiddenOperations": [
+      "createUser",
+      "updateUser", 
+      "deleteUser",
+      "createDepartment",
+      "updateDepartment",
+      "deleteDepartment", 
+      "modifyApplicationSettings",
+      "updateApproval",
+      "deleteApproval",
+      "modifyOrgSettings"
+    ]
+  },
+  "apiAccess": {
+    "method": "read_only",
+    "endpoints": {
+      "allowed": [
+        "/user/listbypage",
+        "/department/list", 
+        "/topapi/user/listsimple",
+        "/topapi/v2/user/get",
+        "/topapi/message/corpconversation/asyncsend_v2"
+      ],
+      "blocked": [
+        "/user/create",
+        "/user/update", 
+        "/user/delete",
+        "/department/create",
+        "/department/update",
+        "/department/delete"
+      ]
+    }
+  }
+}

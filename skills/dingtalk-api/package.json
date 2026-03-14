@@ -1,0 +1,16 @@
+{
+  "name": "openclaw-dingtalk-api-skill",
+  "version": "1.0.0",
+  "description": "A skill to interact with DingTalk's organization APIs",
+  "main": "scripts/dingtalk-client.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["dingtalk", "api", "integration", "messaging"],
+  "author": "OpenClaw",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1"
+  }
+}
